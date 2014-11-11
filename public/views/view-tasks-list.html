@@ -1,0 +1,16 @@
+<!-- THE TASKS =============================================== -->
+<!-- hide these tasks if the loading variable is true -->
+    <table class="table table-condensed table-striped">
+    	<thead>
+	        <tr>
+	            <th>ID</th>
+	            <th>Task</th>
+	            <th>Date</th>	            
+	        </tr>
+	    </thead>
+    	<tr class="task"  ng-repeat="task in tasks">    
+    		<td><h5>{{ task.id }} </td>
+    		<td><small> {{ task.task }} </small></td>
+    		<td> {{ task.created_at }} </h5></td>
+    	</tr>
+    </table>

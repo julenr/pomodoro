@@ -1,0 +1,16 @@
+<!-- NEW TASK FORM =============================================== -->
+<form ng-submit="submitTask()"> 
+    <!-- TASK DESCRIPTION -->
+    <div class="form-group">
+        <input type="text" class="form-control input-sm" name="task" ng-model="taskData.task" placeholder="Task description" required>
+    </div>
+
+    Counter : <font color='red'><span ng-bind='minutes'></span>:<span ng-bind='seconds'></span></font>
+
+    <div class="form-group text-right">                                 
+        <button type="button" data-ng-click="startCounter()" class="btn btn-primary btn-sm">Start</button>
+        <button type="button" data-ng-click="stopCounter()" class="btn btn-sm">Stop</button>
+        <button type="button" data-ng-click="resetCounter()" class="btn btn-sm">Reset</button>
+        <button type="submit" class="btn btn-sm">Save</button>
+    </div>
+</form>    
